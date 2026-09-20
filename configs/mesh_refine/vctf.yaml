@@ -1,0 +1,30 @@
+device:
+seed:
+output_dir:
+
+input:
+  mesh_path:
+  multiview_colors_dir:
+  viewpoints:
+
+texture:
+  per_vertex_color_init:
+  enable_color_completion: true
+
+optimization:
+  optimizer: adam
+  num_steps:
+  lr:
+
+visibility:
+  kdtree_k:
+  erode_pixels:
+  fixed_during_optimization: true
+
+loss:
+  color_weight:
+
+output:
+  textured_mesh_path:
+  texture_map_path:
+  log_interval:

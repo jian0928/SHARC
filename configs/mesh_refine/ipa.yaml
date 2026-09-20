@@ -1,0 +1,27 @@
+device:
+seed:
+output_dir:
+
+input:
+  multiview_normals_dir:
+  multiview_silhouettes_dir:
+  viewpoints:
+
+mesh:
+  smplx_model_path:
+  gender: neutral
+  init_params_path:
+
+optimization:
+  optimizer: adam
+  num_steps:
+  lr:
+
+loss:
+  normal_weight:
+  silhouette_weight:
+  view_confidence:
+
+output:
+  mesh_path:
+  log_interval:

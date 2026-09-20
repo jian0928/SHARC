@@ -1,0 +1,35 @@
+device:
+seed:
+output_dir:
+
+input:
+  init_mesh_path:
+  multiview_normals_dir:
+  multiview_silhouettes_dir:
+  viewpoints:
+
+mesh:
+  remesh_iterations:
+  edge_length:
+  smooth_iters:
+
+optimization:
+  optimizer: adam
+  num_steps:
+  lr:
+
+loss:
+  normal_weight:
+  silhouette_weight:
+  smoothness_weight:
+  edge_normal_weight:
+
+refinement:
+  enable_poisson: true
+  poisson_depth:
+  enable_smplx_offset: true
+  smplx_offset_weight:
+
+output:
+  mesh_path:
+  log_interval:
