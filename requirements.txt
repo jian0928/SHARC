@@ -1,0 +1,17 @@
+torch
+diffusers
+transformers
+accelerate
+smplx
+nvdiffrast
+trimesh
+scipy
+numpy
+opencv-python
+matplotlib
+scikit-image
+lpips
+dists
+insightface
+open3d
+git+https://github.com/yfeng95/PIXIE.git
