@@ -1,0 +1,28 @@
+model_id:
+sample_size:
+use_fp16:
+
+vae:
+  pretrained_path:
+  scale_factor:
+
+text_encoder:
+  pretrained_path:
+  max_length:
+
+scheduler:
+  prediction_type:
+  beta_start:
+  beta_end:
+  beta_schedule:
+  num_train_timesteps:
+
+unet:
+  in_channels:
+  out_channels:
+  down_block_types:
+  up_block_types:
+  attention_resolutions:
+  channel_mult:
+  num_res_blocks:
+  transformer_depth:

@@ -1,0 +1,65 @@
+seed:
+device:
+output_dir:
+resume_from:
+
+dataset:
+  name:
+  root:
+  train_split:
+  val_split:
+  image_size:
+  multiview_angles:
+  face_crop_size:
+  num_workers:
+  pin_memory:
+  face_detector:
+
+model:
+  backbone: sd2.1
+  unet_pretrained_path:
+  global_branch:
+    in_channels:
+    out_channels:
+    down_block_types:
+    up_block_types:
+    attention_resolutions:
+    channel_mult:
+    num_res_blocks:
+    transformer_depth:
+  local_branch:
+    in_channels:
+    out_channels:
+    down_block_types:
+    up_block_types:
+    attention_resolutions:
+    channel_mult:
+    num_res_blocks:
+    transformer_depth:
+  cross_branch_alignment:
+    enabled: true
+    layer_index:
+    mask_downsample:
+  conditioning:
+    use_normal_maps: true
+    use_silhouette_maps: true
+    input_channels:
+
+training:
+  iterations:
+  batch_size:
+  optimizer:
+    name: adam
+    lr:
+    lr_decay_after:
+    lr_decay_factor:
+  mixed_precision:
+  gradient_accumulation_steps:
+  checkpoint_interval:
+  log_interval:
+  eval_interval:
+  ema_decay:
+
+validation:
+  num_inference_steps:
+  guidance_scale:

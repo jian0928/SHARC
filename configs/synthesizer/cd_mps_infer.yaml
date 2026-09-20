@@ -1,0 +1,24 @@
+ckpt_path:
+device:
+seed:
+output_dir:
+
+sampling:
+  sampler: ddim
+  num_inference_steps:
+  guidance_scale:
+
+multiview:
+  angles:
+  image_size:
+  face_crop_size:
+
+conditioning:
+  smplx_render_dir:
+  use_normal_maps: true
+  use_silhouette_maps: true
+
+output:
+  save_normal_maps: true
+  save_color_images: true
+  save_face_crops: true
